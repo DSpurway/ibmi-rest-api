@@ -1,0 +1,22 @@
+<dbml restUriPathTemplate="/" version="1.0">
+    <program errormessage="" httpheaders="*NONE" httpstatusonfailure="500"
+        httpstatusonsuccess="200" inputWrapperIdentifier="GETALLInput"
+        name="GETALL" outputWrapperIdentifier="GETALLResult"
+        querytype="multi-row" restConsumes="*/*" restHttpRequestMethod="GET"
+        restProduces="application/json" returnsqlstate="*ERRORS"
+        treatwarningaserror="true" trimmode="*TRAILING" wrapInputParams="false" wrapOutputParam="true">
+        <sql statement="SELECT * FROM POLICY"/>
+    </program>
+    <program errormessage="" httpheaders="*NONE" httpstatusonfailure="500"
+        httpstatusonsuccess="200" inputWrapperIdentifier="GETBYIDInput"
+        name="GETBYID" outputWrapperIdentifier="GETBYIDResult"
+        querytype="single-row" restConsumes="*/*" restHttpRequestMethod="GET"
+        restProduces="application/json" restUriPathTemplate="{id}"
+        returnsqlstate="*ERRORS" treatwarningaserror="true" trimmode="*TRAILING"
+        wrapInputParams="false" wrapOutputParam="true">
+        <sql statement="SELECT * FROM POLICY WHERE policyID = ?">
+            <data ccsid="37" name="policyID" nullable="true" precision="8"
+                restInPathParam="id" type="CHAR" usage="input"/>
+        </sql>
+    </program>
+</dbml>

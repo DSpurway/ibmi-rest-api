@@ -1,0 +1,30 @@
+CREATE SCHEMA CLAIMS;
+
+CREATE TABLE CLAIMS/POLICY
+(
+  "Policy ID" FOR COLUMN policyID CHAR (8) NOT NULL,
+  "First Name" FOR COLUMN firstName CHAR (50) NOT NULL,
+  "Last Name" FOR COLUMN lastName CHAR (50) NOT NULL,
+  "Street 1" FOR COLUMN street1 CHAR (50) NOT NULL,
+  "Street 2" FOR COLUMN street2 CHAR (50),
+  "City" FOR COLUMN city CHAR (50) NOT NULL,
+  "State" FOR COLUMN state CHAR (2) NOT NULL,
+  "Zip" FOR COLUMN zip CHAR (8) NOT NULL,
+  "Email Address" FOR COLUMN email CHAR (100) NOT NULL,
+  "Phone Number" FOR COLUMN phone CHAR (16) NOT NULL,
+  PRIMARY KEY (policyID)
+)
+RCDFMT policyr;
+
+CREATE TABLE CLAIMS/VEHICLE
+(
+  "Vehicle ID" FOR COLUMN vehicleID CHAR (8) NOT NULL,
+  "Make Year" FOR COLUMN makeYear SMALLINT NOT NULL,
+  "Make" FOR COLUMN make CHAR (50) NOT NULL,
+  "Model" FOR COLUMN model CHAR (50) NOT NULL,
+  "Vehicle Identification Number" FOR COLUMN vin CHAR (50) NOT NULL,
+  "Policy ID" FOR COLUMN policyID CHAR (8) NOT NULL,
+  PRIMARY KEY (vehicleID),
+  CONSTRAINT FK_POLICYID FOREIGN KEY (policyID) REFERENCES CLAIMS/POLICY(policyID)
+)
+RCDFMT vehiclesr;
