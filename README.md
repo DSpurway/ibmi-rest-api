@@ -89,7 +89,7 @@ If you kept `sudo`, the password that the command prompts you is your local user
 ## Install
 1. Clone this repo
 ```shell
-% git clone https://github.com/acmThinks/ibmi-rest-api
+% git clone https://github.com/acmthinks/ibmi-rest-api
 % cd ibmi-rest-api
 ```
 
