@@ -4,13 +4,13 @@ This repo contains the instructions and steps to setup an SQL web service on IBM
 
 Based on the following IBM Developer tutorial series by Nadir Amra:
 
-* [Part 1: Building a REST service with ingetrated web services server for IBM i]([https://developer.ibm.com/tutorials/i-rest-web-services-server1/)
+* [Part 1: Building a REST service with ingetrated web services server for IBM i](https://developer.ibm.com/tutorials/i-rest-web-services-server1/)
 
-* [Part 2: Building a REST service with ingetrated web services server for IBM i]([https://developer.ibm.com/tutorials/i-rest-web-services-server2/)
+* [Part 2: Building a REST service with ingetrated web services server for IBM i](https://developer.ibm.com/tutorials/i-rest-web-services-server2/)
 
-* [Part 3: Building a REST service with ingetrated web services server for IBM i]([https://developer.ibm.com/tutorials/i-rest-web-services-server3/)
+* [Part 3: Building a REST service with ingetrated web services server for IBM i](https://developer.ibm.com/tutorials/i-rest-web-services-server3/)
 
-* [Create REST APIs based on SQL statements](https://developer.ibm.com/tutorials/creating-rest-apis-based-on-sql-statements/])
+* [Create REST APIs based on SQL statements](https://developer.ibm.com/tutorials/creating-rest-apis-based-on-sql-statements/)
 
 
 ## Architecture
